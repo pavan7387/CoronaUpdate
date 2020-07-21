@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_view"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_country"
+                android:layout_weight="1.6"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_total_case"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_weight="0.8"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_death"
+                android:layout_weight="0.8"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_recoverd"
+                android:layout_weight="0.8"
+                android:textColor="@color/color_green"
+                android:textSize="@dimen/_12sdp" />
+
+
+
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_color"/>
+</LinearLayout>

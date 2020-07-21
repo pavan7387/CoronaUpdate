@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Corona Update</string>
+    <string name="gallery">Corona Update</string>
+    <string name="no_internet_nplease_connect_to_internet">No Internet !\nPlease Connect to internet</string>
+    <string name="total_casees">Total Casees  </string>
+    <string name="total_death">Total Death</string>
+    <string name="total_recoverd">Total Recoverd</string>
+    <string name="sort_by_country">Sort by country</string>
+    <string name="sort_by_total_cases">Sort by Total cases</string>
+    <string name="sort_by_deaths">Sort by Deaths</string>
+    <string name="sort_by_recovered">Sort by Recovered</string>
+    <string name="no_data">No data found, please clear filter</string>
+</resources>
