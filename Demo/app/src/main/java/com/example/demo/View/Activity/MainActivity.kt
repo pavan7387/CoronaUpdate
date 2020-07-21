@@ -120,7 +120,7 @@ class MainActivity : AppCompatActivity(),SortByDialog.SortBy ,FilterByDialog.Fil
                 header.visibility = View.VISIBLE
                 if (!isApiCalled) {
                     isApiCalled = true
-                    getMediaList(true)
+                    getCoronaList(true)
                 }
             }else{
                 tv_no_data.text = getString(R.string.no_internet_nplease_connect_to_internet)
@@ -180,9 +180,9 @@ class MainActivity : AppCompatActivity(),SortByDialog.SortBy ,FilterByDialog.Fil
     }
 
     /**
-     * get media list
+     * get corona list
      */
-    private fun getMediaList(isLoaderShow: Boolean) {
+    private fun getCoronaList(isLoaderShow: Boolean) {
         if (isLoaderShow ){
             mDialog = AppUtil.showProgressDialog(this)
         }

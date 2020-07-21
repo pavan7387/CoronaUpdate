@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Corona Update</string>
-    <string name="gallery">Corona Update</string>
     <string name="no_internet_nplease_connect_to_internet">No Internet !\nPlease Connect to internet</string>
     <string name="total_casees">Total Casees  </string>
     <string name="total_death">Total Death</string>
