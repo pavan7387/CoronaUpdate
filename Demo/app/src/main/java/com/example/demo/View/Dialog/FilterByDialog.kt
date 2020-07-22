@@ -146,8 +146,16 @@ class FilterByDialog(var mFilterByName: String,var mMinValue: String,var mMaxVal
        if (etMinValue.text.toString().trim().equals("") || etMaxValue.text.toString().trim().equals("")){
            Toast.makeText(this.activity,"Please enter min and max value",Toast.LENGTH_LONG).show()
        }else{
-           filterByListner?.filterBy(spinner.selectedItem.toString().trim(),etMinValue.text.toString().trim(),etMaxValue.text.toString().trim())
-           dismiss()
+           if (etMinValue.text.toString().trim().toInt() < etMaxValue.text.toString().trim().toInt()) {
+               filterByListner?.filterBy(
+                   spinner.selectedItem.toString().trim(),
+                   etMinValue.text.toString().trim(),
+                   etMaxValue.text.toString().trim()
+               )
+               dismiss()
+           }else{
+               Toast.makeText(this.activity,"max value should be greater than min value",Toast.LENGTH_LONG).show()
+           }
        }
     }
 
